@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* A tag style inicia um css, logo o comentário é diferente */
+        /* toda tag h1 seguirá esse estilo caso padrão */
+        h1 {
+            background: green;
+        }
+
+        /* toda tag que pertence a classe fundo-vermelho seguirá esse estilo, mesmo que seja um h1 */
+        .fundo-vermelho {
+            background: red;
+        }
+
+        /* mesmo pertencendo a um grupo, a tag de id "cabeçalho-um", seguirá esse estilo */
+        #cabeçalho-um {
+            background: purple;
+        }
+
+        /* as tags span do id "cabeçalho-dois" seguirão esse estilo */
+        #cabeçalho-dois span {
+            font-size: large;
+            background-color: yellow;
+        }
+
+        /*  
+            O estilo que a tag seguirá é determinado pela especificidade da chamada no css:
+            # > . > 'tag'
+        */
+    </style>
+
+    <title>Id e Class</title>
+</head>
+
+<body>
+
+    <h1 id="cabeçalho-um">
+        Esta tag h1 pode ser acessada pelo id "cabeçalho-um"
+    </h1>
+
+    <h1 id="cabeçalho-dois" class="fundo-vermelho borda">
+        Esta tag h1 pode ser acessada pelo id "cabeçalho-dois" e pertence aos grupos "fundo-vermelho" e "borda"
+        <br>
+        <span>
+            Essa tag inline pode ser acessada pelo id "nota"
+        </span>
+    </h1>
+
+</body>
+
+</html>
