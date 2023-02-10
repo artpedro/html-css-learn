@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    background: coral;
+}
+
+#heading h1 {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#heading a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
