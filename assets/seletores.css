@@ -1,0 +1,207 @@
+/* O * é utilizado para selicionar tudo
+   geralmente utilizado para resetar o CSS */
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Tags também podem ser utilizadas para estilizar
+   elementos*/
+
+h1 {
+    font-size: 24px;
+}
+
+body {
+    background-color: #8B4DE8;
+}
+
+li {
+    margin: 10px 0px;
+    height: 30px;
+}
+
+/* Podemos ser mais específicos e editar elementos que estejam
+   contidos em outros obrigatoriamente */
+
+body header div h1{
+    color:rgb(150,150,150);
+}
+
+/* Podemos chamar o elemento pelo seu Id ou por sua classe */
+
+#cabecalho {
+    background-color: #361E5B;
+}
+.lorem {
+    color: black;
+}
+.container-lateral{
+    height: 1000px;
+    width: 150px;
+    margin: 0 10px 0 0;
+    padding: 10px 10px;
+    background-color: #5D339C;
+    float:left;
+}
+.container-header {
+    height: 100px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+.elemento-inicial {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.conteudo-principal {
+    height: 100%;
+    width: 100%;
+}
+
+/* A regra de especificidade dos elementos seguidos também pode ser
+   utilizada com classes e id */
+
+/* o h1 dentro de um elemento de classe container-header que, por usa vez,
+   está contido em um elemento de id cabecalho */
+#cabecalho .container-header h1 {
+    font-style: italic;
+    align-content: center;
+}
+
+/* Selecionando somente elementos que possuem essas duas classes */
+.sidetext.lorem {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+/* Child selection */
+
+/* Todo elemento da classe lorem filho direto de um h2 */
+h2 > .lorem {
+    text-align: center;
+}
+h2 > .main-list {
+    list-style: none;
+}
+
+/* Simbling selection */
+
+/* Todo elemento da classe lorem que é irmão direto de um elemento de classe
+   lorem */
+.lorem + .lorem {
+    text-decoration:line-through;
+}
+
+/* Todo elemento irmão de um elemento da classe elemento-inicial */
+.elemento-inicial ~ li {
+    text-transform: capitalize;
+}
+
+/* Seleção por atributo */
+
+/* Possui um atributo com esse nome, não necessariamente
+   com um valor*/
+[atributo] {
+    flex:none
+}
+
+/* Possui um atributo com esse nome e esse valor */
+[atributo= "initial"] {
+    background-color: #361E5B;
+}
+
+/* O atributo tem pelo menos um valor li */
+[atributo~="li"] {
+    background-color: #8B4DE8;
+}
+
+/* Adicionais:
+    atributo começando com a
+    [atributo ^= "a"]
+
+    atributo terminando com a
+    [atributo $= "a"]
+
+    atributo que contenha um ar
+    [atributo *= "ar"*/
+
+/* Obs: existem atributos que não são explícitos  */
+[checked] {
+    size-adjust: 50px;
+}
+
+/* Pseudo-classes
+
+    estado de elementos*/
+
+/* quando o mouse está em cima do elemento */
+.elemento-inicial:hover {
+    color:#8B4DE8
+}
+
+/* quando o elemento leva para um link visitado ou não */
+a:link {
+    color:white ;
+}
+a:visited {
+    color:aquamarine
+}
+
+/* input com caixa marcada ou desativada */
+
+.check:checked{
+    height: 50px;
+    width: 50px;
+}
+.check:disabled {
+    height: 10px;
+    width: 10px;
+}
+
+/* podemos alterar propriedades de outros elementos usando
+   pseudo-classes */
+
+.check:checked + .lorem{
+    background-color: darkcyan;
+}
+
+/* Especiais */
+
+/* :not() indica negação
+    ex: todos os ul que não são da classe .diferente */
+h2 ul :not(.diferente) {
+    text-decoration: underline;
+}
+
+.check:not(:checked) {
+    height: 10px;
+    width: 10px;
+}
+
+/* :nth-child() seleciona filhos especificos de um elemento */
+
+h2 ul li:nth-child(odd) {
+    color: white;
+}
+h2 ul li:nth-child(even) {
+    color: red;
+}
+h2 ul li:nth-child(5n) {
+    color: black;
+}
+
+h2 ul li:nth-child(7) {
+    color: violet;
+}
+
+
+
+
+
+
+
+
+
