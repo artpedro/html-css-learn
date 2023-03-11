@@ -1,3 +1,8 @@
+
+/* Especificidade
+    !important > style > ID (1,0,0) > Classes/atributos/pseudo-classes (0,1,0) > Elementos/pseudo-elementos (0,0,1) */
+
+
 /* O * é utilizado para selicionar tudo
    geralmente utilizado para resetar o CSS */
 
@@ -197,9 +202,36 @@ h2 ul li:nth-child(7) {
     color: violet;
 }
 
+/* Pseudo-elementos */
 
+ul.main-list li::after {
+    content:' after';
+    color:black;
+}
 
+ul.main-list li::before {
+    content: 'before '
+}
 
+main .lorem::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+}
+
+.sidetext.lorem::first-line {
+    color:white;
+}
+
+.lorem::selection {
+    background: black;
+    color: red;
+}
+
+main input::placeholder {
+    font-size: 20px;
+    color: black;
+}
 
 
 
