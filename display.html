@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/display.css">
+    <title>display</title>
+</head>
+<body>
+    <div>
+        <p class="ins">Blocos em display: block</p>
+    </div>
+    <div class="grid-block">
+        <div class="col-block"> 1 </div>
+        <div class="col-block"> 2 </div>
+        <div class="col-block"> 3 </div>
+        <div class="col-block"> 4 </div>
+    </div>
+    <div>
+        <p class="ins">Blocos em display: inline</p>
+    </div>
+    <div class="grid-inline">
+        <div class="col-inline"> 1 </div>
+        <div class="col-inline"> 2 </div>
+        <div class="col-inline"> 3 </div>
+        <div class="col-inline"> 4 </div>
+    </div>
+    <div>
+        <p class="ins">Blocos em display: inline-block (margin=0)</p>
+    </div>
+    <div class="grid-inline-block">
+        <div class="col-inline-block"> 1 </div>
+        <div class="col-inline-block"> 2 </div>
+        <div class="col-inline-block"> 3 </div>
+        <div class="col-inline-block"> 4 </div>
+    </div>
+    <div>
+        <p class="ins"> float: left</p>
+        <div class="grid">
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+        </div>
+        <p> O float left faz todos os elementos flutuarem para a esquerda e ocuparem exatamente suas medidas, a margem não se sobrepõe</p>
+    </div>
+    <div>
+        <p class="ins"> float: left</p>
+        <div class="grid">
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+            <div class="col">conteudo</div>
+        </div>
+        <p style="clear:left"> O float left faz todos os elementos flutuarem para a esquerda e ocuparem exatamente suas medidas, a margem não se sobrepõe</p>
+        <p style="clear:left"> Enquanto o clear:left certifica que o elemento está posicionado com a sua esquerda livre, impedendindo que o texto acima ocupe o espaço que restou do float:left</p>
+    </div>
+</body>
+</html>
