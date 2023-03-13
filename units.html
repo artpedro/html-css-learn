@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/units.css">
+    <title>Medidas</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#1">Um</a></li>
+            <li><a href="#2">Dois</a></li>
+            <li><a href="#3">Tres</a></li>
+        </ul>
+    </nav>
+    <p> Click aqui</div></p>
+    <p class="title">
+        Unidades de medida absolutas:<br>     
+    <p class="opt">
+        Não mudam com mudanças no viewport<br><br>
+        px: pixels<br>
+        in: inche1s<br>
+        cm: centimetros<br>
+    </p>
+    </p>
+    <p class="title">
+        Unidades de medida relativas:
+    </p>
+    <p class="opt">
+        Mudam em relação aos pais, ao viewport e ao root<br><br>
+        %: relativa ao tamanho do elemento pai<br>
+        EM: relativa a font-size do elemento pai<br>
+        REM: relativa ao font-size do elemento root, útil para padronizar todo o site e facilitar alterações do tamanho da fonte pelo usuário<br>
+        VH: relativa a altura do viewport atual<br>
+        VW: relativa a largura do viewport atual<br>
+        vmin: relativa ao menor tamanho do viewport<br>
+        vmax: relativa ao maior tamanho do viewport<br>
+    </p>
+    <div class="pai">
+        a div pai que contém esses espaços abaixo possui font-size de 5vh e seus filhos possuem font-size de 0.5em, ou seja, 2.5vh
+        <div class="um">tela um</div>
+        <div class="dois">tela dois</div>
+        <div class="tres">tela três</div>
+    </div>
+    <div class="total">
+        <div class="um" id="1"> todo o viewport</div>
+        <div class="dois" id="2"> tela dois</div>
+        <div class="tres" id="3"> tela tres</div>
+    </div>
+</body>
+</html>
