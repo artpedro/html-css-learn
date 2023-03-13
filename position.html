@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/position.css">
+    <title>Position</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="pai">
+        <div class="filho static">
+            <p>
+                static: é a posição padrão de todos os elementos HTML. Eles são posicionados na ordem em que aparecem no fluxo do documento. Se você definir a posição como "static", as propriedades top, bottom, left e right serão ignoradas.
+            </p>
+        </div>
+        <div class="filho relative">
+            <p>
+                Relative: define a posição do elemento em relação à sua posição original. Quando a posição é definida como "relative", você pode usar as propriedades top, bottom, left e right para ajustar a posição do elemento em relação à sua posição original.
+            </p>
+        </div>
+        <div class="filho absolute">
+            <p>absolute: posiciona o elemento em relação ao elemento pai mais próximo que tenha uma posição definida como "relative", "absolute" ou "fixed". Quando a posição é definida como "absolute", você pode usar as propriedades top, bottom, left e right para definir a posição do elemento em relação ao elemento pai.</p>
+        </div>
+    </div>
+        <div class="sticky header topo">
+        <p>sticky: é uma posição híbrida entre "relative" e "fixed". O elemento é posicionado de forma relativa até que seja rolado para fora da tela, e então se torna "fixed" para ficar visível enquanto a página é rolada. </p>
+    </div>
+    </div>
+    <div class="nav">
+        fixed: posiciona o elemento em relação à janela do navegador, ou seja, a posição do elemento permanece a mesma independentemente de como a página é rolada. Quando a posição é definida como "fixed", você pode usar as propriedades top, bottom, left e right para definir a posição do elemento em relação à janela do navegador.
+
+    </div>
+    </div>
+</body>
+</html>
