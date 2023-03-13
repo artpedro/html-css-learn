@@ -20,14 +20,29 @@
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder='Insira seu nome'>
         </p>
+        <div class="desc">
+            <p>
+                <span>'Text'</span>: Cria uma caixa de texto que permite ao usuário inserir dados em formato de texto. É a tag mais comum usada em formulários. 
+            </p>
+        </div>
         <p>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder='Ex.: exemplo@email.com'>
         </p>
+        <div class="desc">
+            <p>
+                'Email': Cria uma caixa de texto para receber um email, o navegador faz uma simples verificação para checar se o email é válido.
+            </p>
+        </div>
         <p>
             <label for="nascimento">Data de nascimento:</label>
             <input type="date" id="birth-date" name="birth-date" min="1945-01-01" max="2003-12-31" value="2003-06-17">
         </p>
+        <div class="desc">
+            <p>
+                'Date': Cria um campo que permite ao usuário inserir uma data, geralmente usado para campos que requerem uma data específica.
+            </p>
+        </div>
         <p style="color: darkcyan;">Sexo:<br>
             <label style="margin-left:20px" for ="feminino">Feminino:</label>
             <input type="radio" id="feminino" name="sex" value="F" checked><br>
@@ -36,6 +51,11 @@
             <label style="margin-left:20px" for ="feminino">Outro:</label>
             <input type="radio" id="outro" name="sex" value="O"><br>
         </p>
+        <div class="desc">
+            <p>
+                'Radio': Cria um botão de opção que permite ao usuário selecionar apenas uma opção de uma lista de opções.
+            </p>
+        </div>
         <p>
             <label for="estado-civil">Estado Civil:</label>
             <select id="estado-civil" name="estado-civil">
@@ -45,35 +65,74 @@
                 <option value="viúvo" label="Viúvo(a)"></option>
             </select>
         </p>
+        <div class="desc">
+            <p>
+                'Option': Um tipo de diferente de input, este cria uma caixa de texto que abre diversas opções de resposta ao clickar.
+            </p>
+        </div>
         <p>
             <label for="emprego">Empregado:</label>
             <input type='checkbox' id="emprego" name="emprego" value = "empregado">
-        <p>
+        </p>
+        <div class="desc">
+            <p>
+                'Checkbox': Cria uma caixa de seleção que permite ao usuário selecionar uma ou mais opções de uma lista.
+            </p>
+        </div>
+        <p>  
+            
             <label for="cor">Cor favorita:</label>
             <input type="color" id="cor" name="cor" value="#ff00ff">
         </p>
+        <div class="desc">
+            <p>
+                'Color': Cria uma caixa com uma cor para o usuário selecionar a cor desejada no gradiente.
+            </p>
+        </div>
         <p>
             <label for="foto">Foto 3x4:</label>
             <input type="file" id="foto" name="foto" accept=".jpeg,.png" multiple>
         </p>
+        <div class="desc">
+            <p>
+                'File':  Cria uma caixa de seleção que permite ao usuário selecionar um ou mais arquivos para serem enviados para o servidor.
+            </p>
+        </div>
         <p>
             <label for="altura">Altura (cm):</label>
             <input type="number" id="altura" name="altura" placeholder='170' min="40" max="250" step="1">
         </p>
+        <div class="desc">
+            <p>
+                'Number': Cria uma caixa de texto que permite ao usuário inserir dados numéricos, geralmente usado para campos que requerem entrada numérica.
+            </p>
+        </div>
         <p>
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" placeholder='Insira sua senha'>
         </p>
+        <div class="desc">
+            <p>
+                'Password': Cria uma caixa de texto que oculta o texto digitado, geralmente usado para campos de senha.
+            </p>
+        </div>
         <p>
             <label for="textarea">Texto:</label>
             <textarea name="textarea" id="textarea" rows="3" col="10"></textarea>
         </p>
+        <div class="desc">
+            <p>
+                'Password': Cria uma caixa de texto de tamanho flexível para o usuário escrever textos maiores.
+            </p>
+        </div>
         <p>
             <label for="site">Site:</label>
             <input type="url" id="site" name="site" placeholder='Insira sua url'>
         </p>
-        
-
+        <div class="desc">
+            <p>
+                'Url': Cria uma caixa de texto para o usuário digitar um link/url. O navegador faz uma simples verificação para assegurar que é um url.
+        </div>
     </section>    
     <button type="submit">
         Enviar
