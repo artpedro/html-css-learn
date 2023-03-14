@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+html {
+    font-size:62.5%;
+    width: 100%;
+    background-color: #161b22;
+
+}
+header .header {
+    width: 100%;
+    height: ;
+    background-color: #2b3d57;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid { 
+    padding:1%;
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+}
+.grid .col {
+    margin:1%;
+    background-color: teal;
+    float: left;
+    width: 23%;
+    height: 270px;
+}
+
+@media (max-width:375px) {
+    .grid .col {
+        margin: 1%;
+        background-color: teal;
+        float: left;
+        width: 98%;
+        height: 270px;
+    }
+    
+}
+
+@media (min-width:376px) and (max-width: 720.98px) {
+    .grid .col {
+        margin: 1%;
+        background-color: teal;
+        float: left;
+        width: 48%;
+        height: 270px;
+    
+    } 
+}
