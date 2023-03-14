@@ -28,38 +28,46 @@ html {
 
 }
 
-@media (min-width:375px) {
+@media (max-width:375px) {
     .grid {
         margin: 1vh 1vw;
-        height:96vh; 
-        width:96vw;
+        height:98vh; 
+        width:98vw;
     }
     .col {
         margin: 1vh 1vw;
         background-color: teal;
         float: left;
         width: 96vw;
-        height: 96vh;
+        height: 48vh;
     }
     
 }
 
-@media (min-width: 575.98px) {
-    
+@media (min-width:376px) and (max-width: 720.98px) {
+    .grid {
+        margin: 1vh 1vw;
+        height:98vh; 
+        width:98vw;
+    }
     .col {
         margin: 1vh 1vw;
         background-color: teal;
         float: left;
-        width: 96vw;
-        height: 96vh;
+        width: 47vw;
+        height: 23.5vh;
     
     } 
 }
 
-@media (min-width: 767.98px) {
-    
+@media (min-width: 721.98px) {
+    .grid {
+        margin: 1vh 1vw;
+        height:98vh; 
+        width:98vw;
+    }
     .col {
-    margin: 0.25vh 0.25vw;
+    margin: 1vh 1vw;
     background-color: teal;
     float: left;
     width: 22.5vw;
