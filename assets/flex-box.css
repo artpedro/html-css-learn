@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(49, 49, 63);
+    font-family: sans-serif;
+    color:white;
+}
+
+.flex-container {
+    /* o display flex afeta os filhos do container */
+    display:flex;
+    /* habilitando as seguites configurações */
+    flex-direction: row; /* Eixo principal do flex-box: row - x-axis
+                            column = y-axis; */
+    justify-content: space-evenly;  /* Forma como os    filhos estarão alinhados em relação ao flex-direction*/
+    align-items:center;
+
+    background-color: black;
+    height:500px;
+}
+.flex-item {
+    background-color: blueviolet;
+}
