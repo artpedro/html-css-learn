@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
@@ -10,14 +10,55 @@ html {
     font-size:62.5%;
     width: 100%;
     background-color: #161b22;
+    scroll-behavior:smooth;
 
 }
 header .header {
+    position: fixed;
+    top:0;
     width: 100%;
-    height: ;
-    background-color: #2b3d57;
+    height: 100px;
+    background-color: #2b3d579d;
+    text-align: center;
+    line-height: 100px;
+}
+header .header .nav-bar {
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2%;
+}
+header .header .nav-bar ul {
+    text-align: 100%;
+    width: 100%;
+    list-style: none;
 }
 
+header .header .nav-bar ul li {
+    display: block;
+    float:left;
+    font-size: 4rem;
+    width: 33%;
+}
+header .header .nav-bar ul li a {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-decoration: none;
+}
+header .header .nav-bar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.356);
+    transition: all ease-in 100ms;
+}
+header .header .nav-bar ul li a:link, header .header .nav-bar ul li a:visited {
+    color:rgb(196, 196, 196);
+}
+
+
+.header-space {
+    width: 100%;
+    height: 100px;
+}
 .grid:after {
     content: '';
     display: block;
@@ -35,6 +76,14 @@ header .header {
     float: left;
     width: 23%;
     height: 270px;
+}
+.blank-page {
+    height: 100vh;
+    background-color: #344050;
+}
+
+.end-page {
+    height: 100vh;
 }
 
 @media (max-width:375px) {
