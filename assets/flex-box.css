@@ -15,13 +15,34 @@ html {
     display:flex;
     /* habilitando as seguites configurações */
     flex-direction: row; /* Eixo principal do flex-box: row - x-axis
-                            column = y-axis; */
-    justify-content: space-evenly;  /* Forma como os    filhos estarão alinhados em relação ao flex-direction*/
-    align-items:center;
+    column = y-axis; */
 
-    background-color: black;
+    flex-wrap: nowrap; /* ajusta como os elemnentos vão funcionar no caso de overflow; nesse caso, se o elemento tiver 100% de width, ele vai realmente ocupar 100% e jogar os outros pra baixo*/
+
+    flex-flow: row wrap; /*atalho para as duas propriedades de cima */
+    
+    justify-content:center;  /* Forma como os filhos estarão alinhados em relação ao flex-direction*/
+    
+    align-items:flex-end; /*alinhamento dos elementos no eixo perpendicular ao principal */
+
+    align-content:normal; /*alinhamento de todo o conteudo no eixo perpendicular */
+
+    flex-wrap: nowrap; /* ajusta como os elemnentos vão funcionar no caso de overflow*/
+    background-color: black; 
     height:500px;
 }
 .flex-item {
+    flex-grow:1; /*cresce os elementos igualmente para o tamanho disponível na tela  1: on 0: off
+    obs: isso é uma proporção, se um elemento tiver 2 ao inves de 1, ele vai receber aproximadamente 2x mais espaço pelo grow do que os elementos com grow 1, o mesmo vale para o shrink*/
+
+    flex-shrink: 0; /*diminui o tamanho dos elementos para caber na tela pelo menos um 1:on  0:off 
+    obs: se desativado, o container diminui de tamanho mas os elementos não, fazendo overflow*/
+    flex-basis:320px; /*praticamente uma min-width para os elementos em flex-grow;
+    Nesse caso: cresce todos os elementos para 320px e depois distribui igualmente o espaço restante entre eles */ 
+
+    flex: 1 1 320px; /* equivalente as 3 propriedades de cima */
     background-color: blueviolet;
+}
+.flex-item:nth-child(2) {
+    align-self: center; /*escolhe como esse elemento vai se alinhar independente dos outros*/
 }
