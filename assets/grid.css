@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font:sans-serif;
+    font-size:40px;
+}
+
+.grid {
+    max-width: 1200px;
+    display:grid; /*ativa o display em grid */
+
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); 
+    /*A unidade fr é determinada como fragmento, age como uma proporção.
+    A função repeat repete o texto dentro dela x vezes: repeat(x,text)
+    A grid-template-columns recebi tantos valores quanto o número de colunas e cada valor deve ser o tamanho da width da coluna */
+    
+    grid-template-rows:repeat(2, 1fr 2fr);
+    /*A grid-template-rows ajusta o tamanho vertical dos elementos na grid, funciona parecido com a grid-template-columns*/
+    
+    row-gap:30px;
+    column-gap: 30px;
+    gap:30px 30px
+}
+
+.grid div {
+    background-color: cornflowerblue;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    grid-column-start:1; 
+    grid-column-end:3;
+    /*através do grid-column-start/end podemos manipular quantas colunas o elemento em específico vai ocupar, uma alternativa melhor para isso sera o grid-row e grid-column*/}
+
+.grid div:nth-child(10) {
+    grid-row:span 3;
+    grid-column: span 1;
+    /*usando o grid-row e o grid-column podemos definir quantas linhas e quantas colunas aquele elemento vai ocupar sem alterar muito o flow da grid*/
+}
+    
+    
